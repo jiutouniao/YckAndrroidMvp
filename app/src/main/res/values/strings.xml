@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AndrroidMvp</string>
+
+    <!--首页-->
+    <string name="app_read">首页</string>
+    <string name="app_stacks">应用</string>
+    <string name="app_teach">讲书</string>
+    <string name="app_my">我的</string>
+</resources>

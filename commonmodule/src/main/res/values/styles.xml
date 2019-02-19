@@ -1,0 +1,244 @@
+<resources>
+
+
+    <style name="AppTheme_Full" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/ainiActivity</item>
+        <item name="actionMenuTextColor">@color/text_color_white</item>
+        <item name="android:textSize">15dp</item>
+        <!--设置沉浸式-->
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/ainiActivity</item>
+        <item name="actionMenuTextColor">@color/text_color_white</item>
+        <item name="android:textSize">15dp</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="toolbarStyle">@style/MyToolbarTheme</item>
+    </style>
+
+    <style name="ainiActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/push_left_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/push_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/push_right_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/push_right_out</item>
+    </style>
+
+
+
+    <style name="MyToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="contentInsetStart">0dp</item><!-- 设置该属性解决空白部分-->
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+    <!--TextView 单行默认-->
+    <style name="text_single_default">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <!--TextView 不限制行数默认-->
+    <style name="text_more_default">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+
+    <!--TextView 不限制行数默认-->
+    <style name="text_single_left">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_gravity">left|center_vertical</item>
+    </style>
+
+    <style name="text_more_left">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_gravity">left|center_vertical</item>
+    </style>
+
+    <!--不显示模糊-->
+    <style name="CustomDialog_NO_Dim" parent="android:style/Theme.Holo.DialogWhenLarge">
+        <!--背景颜色及透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!--是否全屏-->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <!--将会进入全屏-->
+    <style name="CustomDialog" parent="android:style/Theme.Holo.DialogWhenLarge">
+        <!--背景颜色及透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--是否全屏-->
+        <item name="android:windowFullscreen">true</item>
+
+    </style>
+
+
+    <!--将会进入全屏-->
+    <style name="CustomDialog1" parent="android:style/Theme.Holo.DialogWhenLarge">
+        <!--背景颜色及透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!--是否全屏-->
+        <item name="android:windowFullscreen">false</item>
+        <!--半透明-->
+        <item name="android:windowIsTranslucent">false</item>
+
+    </style>
+
+
+
+    <!--将会进入全屏-->
+    <style name="CustomDialog2" parent="android:style/Theme.Holo.DialogWhenLarge">
+        <!--背景颜色及透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--是否全屏-->
+        <item name="android:windowFullscreen">false</item>
+
+    </style>
+
+
+    <!--主界面radio样式-->
+    <style name="style_radio">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">11dip</item>
+    </style>
+
+    <!-- 自定义loading dialog -->
+    <style name="read_loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <!--主界面radio样式-->
+    <style name="ebook_style_radio">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@drawable/ebook_selector_text_color</item>
+    </style>
+
+    <style name="yellow_rating_bar" parent="Base.Widget.AppCompat.RatingBar.Small">
+        <item name="colorAccent">@color/ebook_bg_yellow_color</item>
+    </style>
+
+    <style name="MyRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/food_rating_bar_full</item>
+        <item name="android:minHeight">35dp</item>
+        <item name="android:maxHeight">35dp</item>
+
+    </style>
+
+    <style name="NavPage">
+
+        <item name="android:layout_width">fill_parent</item>
+
+        <item name="android:layout_height">fill_parent</item>
+
+        <item name="android:orientation">vertical</item>
+
+        <item name="android:gravity">center_horizontal</item>
+
+        <!-- <item name="android:background">@drawable/nav_page</item> -->
+
+
+        <item name="android:background">@color/navpage</item>
+
+    </style>
+
+
+    <!-- 下载apk进度条 -->
+    <style name="apk_mProgress_horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/layer_apk_progressbar_horizontal
+        </item><!-- progress_horizontal -->
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:minHeight">2dip</item>
+        <item name="android:maxHeight">2dip</item>
+    </style>
+
+
+
+
+    <style name="Widget.SearchView" parent="Widget.AppCompat.SearchView">
+        <item name="defaultQueryHint">请输入关键字</item>
+        <item name="queryBackground">@drawable/abc_textfield_search_material</item>
+        <item name="submitBackground">@drawable/abc_textfield_search_material</item>
+        <item name="closeIcon">@mipmap/icon_search</item>
+        <item name="searchIcon">@mipmap/icon_search</item>
+        <item name="searchHintIcon">@mipmap/icon_search</item>
+        <item name="goIcon">@mipmap/icon_search</item>
+        <item name="voiceIcon">@mipmap/icon_search</item>
+        <item name="commitIcon">@drawable/abc_ic_commit_search_api_mtrl_alpha</item>
+    </style>
+
+</resources>

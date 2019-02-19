@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="my_plan">
+        <item>我的</item>
+        <item>全部</item>
+    </string-array>
+
+    <string-array name="my_event">
+        <item>我的</item>
+        <item>全部</item>
+        <item>活动</item>
+    </string-array>
+    <string-array name="my_collections">
+        <!--<item>图书</item>-->
+        <!--<item>文章</item>-->
+        <!--<item>帖子</item>-->
+    </string-array>
+
+    <string-array name="my_teach">
+        <item>讲书</item>
+        <item>全部</item>
+    </string-array>
+</resources>

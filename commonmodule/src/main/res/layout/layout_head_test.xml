@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/head_container"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+    <LinearLayout
+        android:id="@+id/text_view3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading"/>
+
+        <TextView
+            android:id="@+id/text_view4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最近更新 : "/>
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/text_view3"
+        android:layout_toStartOf="@id/text_view3"
+        android:contentDescription="@null"/>
+
+</RelativeLayout>

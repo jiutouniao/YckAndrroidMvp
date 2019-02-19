@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_40"
+        android:paddingRight="@dimen/dp_40"
+        android:id="@+id/llyt_main"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llyt2"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/ebook_shape_wihte_bg"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_single_default"
+                android:paddingTop="@dimen/dp_12"
+                android:textSize="@dimen/sp_13"
+                android:textColor="#333333"
+                android:text="想法" />
+
+
+            <TextView
+                style="@style/text_single_left"
+                android:paddingTop="@dimen/dp_26"
+                android:paddingRight="@dimen/dp_13"
+                android:paddingLeft="@dimen/dp_13"
+                android:id="@+id/tv_message"
+                android:textSize="@dimen/sp_13"
+                android:textColor="#333333"
+                android:text="过法定程序把党的主张、人民意愿转化为国家意志" />
+
+            <com.ys.jsst.pmis.commommodule.util.ContainsEmojiEditText
+                android:id="@+id/et_input"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_115"
+                android:layout_marginRight="@dimen/dp_13"
+                android:layout_marginLeft="@dimen/dp_13"
+                android:layout_marginTop="@dimen/dp_11"
+                android:paddingLeft="@dimen/dp_11"
+                android:paddingTop="11dp"
+                android:gravity="left|center_horizontal"
+                android:imeOptions="actionSend"
+                android:ellipsize="end"
+                android:inputType="text|textMultiLine"
+                android:maxLength="1000"
+                android:hint="写下此时此刻你的想法..."
+                android:textColorHint="@color/read_file_read_text_color"
+                android:lineSpacingExtra="1dp"
+                android:textColor="#848993"
+                android:background="@drawable/ebook_shape_gray_bg"
+                android:scrollHorizontally="false"
+                android:maxLines="1000"
+                android:textSize="15sp" />
+
+            <!--发送按钮-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_23"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    style="@style/text_single_default"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/dp_13"
+                    android:layout_marginLeft="@dimen/dp_13"
+                    android:padding="@dimen/dp_10"
+                    android:id="@+id/tv_close"
+                    android:textSize="13sp"
+                    android:textColor="#515760"
+                    android:background="@drawable/ebook_shape_gray_bg2"
+                    android:text="取消" />
+
+
+                <TextView
+                    style="@style/text_single_default"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/dp_13"
+                    android:layout_marginLeft="@dimen/dp_13"
+                    android:padding="@dimen/dp_10"
+                    android:id="@+id/tv_send"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/ebook_shape_blue_bg2"
+                    android:text="确定" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</layout>

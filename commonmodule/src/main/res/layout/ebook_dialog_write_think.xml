@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/llyt_main"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/llyt2"
+            android:paddingTop="6dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/shape_left_right_radius"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/et_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="19dp"
+                android:paddingTop="11dp"
+                android:paddingLeft="20dp"
+                android:gravity="left|center_horizontal"
+                android:imeOptions="actionDone"
+                android:ellipsize="end"
+                android:background="@color/white"
+                android:inputType="text|textMultiLine"
+                android:maxLength="1000"
+                android:hint="写下这一刻的想法···"
+                android:textColorHint="@color/read_file_read_text_color"
+                android:lineSpacingExtra="1dp"
+                android:textColor="#333333"
+                android:scrollHorizontally="false"
+                android:maxLines="1000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:paddingTop="5dp"
+                android:paddingRight="8dp"
+                android:layout_gravity="right"
+                android:id="@+id/tv_number"
+                android:textSize="16dp"
+                android:textColor="@color/chapter_title_night"
+                android:text="1000字"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+            <TextView
+                android:background="@color/read_white_thought_line_color"
+                android:layout_height="1dp"
+                android:layout_width="match_parent" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:paddingTop="19dp"
+                android:paddingRight="12dp"
+                android:paddingLeft="12dp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:id="@+id/tv_message"
+                android:textSize="16dp"
+                android:textColor="@color/read_common_text_color"
+                android:text="过法定程序把党的主张、人民意愿转化为国家意志" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="2dp"
+                android:paddingRight="12dp"
+                android:paddingLeft="12dp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:id="@+id/tv_chapter"
+                android:textSize="16dp"
+                android:textColor="@color/read_white_thought_section_color"
+                android:text="第四章中国特色社会主义" />
+            <TextView
+                android:background="@color/read_white_thought_line_color"
+                android:layout_height="1dp"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent" />
+
+
+            <!--发送按钮-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:paddingRight="14dp"
+                    android:paddingLeft="15dp"
+                    android:gravity="center"
+                    android:id="@+id/tv_close"
+                    android:textSize="16dp"
+                    android:textColor="@color/read_file_read_text_color"
+                    android:text="关闭" />
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:paddingRight="10dp"
+                    android:gravity="center"
+                    android:id="@+id/tv_see"
+                    android:textSize="16dp"
+                    android:textColor="@color/read_white_thought_visibility_color"
+                    android:text="@string/ebook_all_see" />
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="4dp"
+                    android:gravity="left|center"
+                    android:textSize="16dp"
+                    android:textColor="@color/read_file_read_text_color"
+                    android:text="#" />
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tv_send"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:enabled="false"
+                    android:textColor="@drawable/book_select_text_color"
+                    android:text="发送" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</layout>

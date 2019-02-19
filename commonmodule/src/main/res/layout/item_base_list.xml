@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:tr_bottom_height="30dp"
+            app:tr_head_height="70dp">
+
+            <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+                android:id="@+id/rv_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+              />
+        </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+        <include layout="@layout/item_no_network"/>
+
+        <include layout="@layout/item_no_data"/>
+    </RelativeLayout>
+
+
+
+
+
+</layout>

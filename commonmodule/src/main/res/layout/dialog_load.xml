@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:id="@+id/llyt_dialog"
+        >
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:background="@drawable/shape_load_gray"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="25dp"
+            android:layout_centerInParent ="true"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/anim" />
+    </RelativeLayout>
+
+</layout>

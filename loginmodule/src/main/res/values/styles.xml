@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="login_AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="loginInputLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_50</item>
+        <item name="android:layout_marginLeft">@dimen/dp_33</item>
+        <item name="android:layout_marginRight">@dimen/dp_33</item>
+        <item name="android:background">@drawable/login_shape_ect_corner_bg</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+
+    <style name="loginsplash_style" parent="AppTheme_Full">
+        <!--<item name="android:windowBackground">@drawable/img_read_bg</item>-->
+    </style>
+
+    <style name="loginInputEditStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/login_bg_color_white</item>
+        <item name="android:inputType">text</item>
+        <item name="android:padding">@dimen/dp_7</item>
+        <item name="android:textColor">@color/login_text_color_gray</item>
+        <item name="android:textColorHint">@color/login_text_color_gray1</item>
+        <item name="android:textSize">@dimen/sp_13</item>
+    </style>
+
+    <style name="loginInputTvStyle">
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_42</item>
+        <item name="android:layout_marginLeft">@dimen/dp_33</item>
+        <item name="android:layout_marginRight">@dimen/dp_33</item>
+        <item name="android:background">@drawable/login_shape_login_corner_deny_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

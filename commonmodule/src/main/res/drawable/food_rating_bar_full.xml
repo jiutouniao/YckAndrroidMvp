@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--主背景-->
+    <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/ic_star_yes"></item>
+    <!--&lt;!&ndash;副进度条&ndash;&gt;-->
+    <!--<item-->
+        <!--android:id="@android:id/secondaryProgress"-->
+        <!--android:drawable="@drawable/ic_star_yes"></item>-->
+    <!--&lt;!&ndash;主进度条&ndash;&gt;-->
+    <!--<item-->
+        <!--android:id="@android:id/progress"-->
+        <!--android:drawable="@drawable/ic_star_yes"></item>-->
+</layer-list>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_bar_height"
+        android:background="@drawable/my_title_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:minHeight="@dimen/tool_bar_height"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:elevation="0dp"
+        app:layout_collapseMode="pin"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/MyToolbarTheme">
+
+        <TextView
+            android:id="@+id/tv_tool_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#313340"
+            android:textSize="@dimen/tool_bar_title_size"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tv_tool_bar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|end"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:lines="1"
+            android:textColor="#313340"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:padding="15dp"
+            android:visibility="gone"
+            android:id="@+id/iv_tool_bar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginRight="5dp"
+             />
+    </android.support.v7.widget.Toolbar>
+</layout>
+

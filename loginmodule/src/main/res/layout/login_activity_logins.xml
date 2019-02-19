@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <!--填充高度-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <!--登录-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <!--登录-->
+                <LinearLayout
+                    android:id="@+id/llyt_user"
+                    style="@style/loginInputLayoutStyle"
+                   >
+                    <com.ys.jsst.pmis.commommodule.ui.widget.ClearEditText
+                        android:id="@+id/cet_user_id"
+                        style="@style/loginInputEditStyle"
+                        android:textCursorDrawable="@drawable/shape_cursor_color"
+                        android:hint="@string/login_account_hint_content"
+                        android:maxLength="30"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/dp_33"
+                    android:layout_marginRight="@dimen/dp_33"
+                    android:background="@color/text_color_de"/>
+                
+                <!--忘记密码-->
+                <LinearLayout
+                    android:id="@+id/llyt_password"
+                    style="@style/loginInputLayoutStyle"
+                    android:layout_marginTop="19dp">
+
+                    <com.ys.jsst.pmis.commommodule.ui.widget.ClearEditText
+                        android:id="@+id/cet_pass_word"
+                        style="@style/loginInputEditStyle"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:textCursorDrawable="@drawable/shape_cursor_color"
+                        android:hint="@string/login_password"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:maxLength="30" />
+
+                    <ImageView
+                        android:id="@+id/iv_see_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:padding="5dp"
+                        android:tag="false"
+                        android:paddingRight="7dp"
+                        android:src="@drawable/ic_close_eyes" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/dp_33"
+                    android:layout_marginRight="@dimen/dp_33"
+                    android:background="@color/text_color_de"/>
+                <!--登录-->
+                <TextView
+                    style="@style/text_single_default"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="@dimen/dp_33"
+                    android:layout_marginRight="@dimen/dp_33"
+                   android:textColor="@color/text_color_04"
+                    android:textSize="@dimen/sp_10"
+                    android:text="@string/login_forget" />
+                <!--登录-->
+                <TextView
+
+                    android:id="@+id/tv_login"
+                    style="@style/loginInputTvStyle"
+                    android:layout_below="@+id/rl_pass"
+                    android:layout_marginTop="@dimen/dp_49"
+                    android:text="@string/login_log_in" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--填充高度-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </LinearLayout>
+    </LinearLayout>
+</layout>

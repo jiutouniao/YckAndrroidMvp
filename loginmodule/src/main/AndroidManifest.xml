@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.ssdy.people.read.login"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        tools:replace="android:name">
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:theme="@style/loginsplash_style">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 登录界面 -->
+        <activity
+            android:name=".ui.activity.LoginsActivity"
+            android:theme="@style/AppTheme_Full"/>
+
+    </application>
+
+</manifest>

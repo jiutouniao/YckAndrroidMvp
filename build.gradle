@@ -1,0 +1,54 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.0'
+        
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+
+ext{
+    compileSdkVersion = 27
+    buildToolsVersion = '27.0.3'
+    targetSdkVersion = 27
+
+    //主程序版本信息
+    minSdkVersion = 16
+    versionCode = 1;
+    versionName = '1.0'
+
+    //jjdxm-ijkplayer library版本信息
+    jjdxm_minSdkVersion = 16
+    jjdxm_versionCode = 1
+    jjdxm_versionName = "1.0.0"
+    jjdxm_v4 = 'com.android.support:support-v4:23.3.0'
+    jjdxm_v7 = 'com.android.support:appcompat-v7:27.1.1'
+}
+
+
+allprojects {
+    repositories {
+        google()//保持这个放在顶部
+        mavenCentral()
+        maven {
+            url "https://jitpack.io"
+        }
+        maven{
+            url 'https://maven.google.com'
+        }
+        jcenter()//保持这个放在底部
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

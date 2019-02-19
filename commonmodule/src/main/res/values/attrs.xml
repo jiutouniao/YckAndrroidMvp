@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--圆形头像-->
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="LoadingView">
+        <attr name="loading_color" format="color" />
+        <attr name="ring_style" format="enum">
+            <enum name="square" value="0" />
+            <enum name="round" value="1" />
+        </attr>
+        <attr name="progress_style" format="enum">
+            <enum name="material" value="0" />
+            <enum name="linear" value="1" />
+        </attr>
+
+        <attr name="ring_width" format="dimension" />
+        <attr name="ring_radius" format="dimension" />
+    </declare-styleable>
+
+    <!--富文本-->
+    <declare-styleable name="RichText">
+        <attr name="placeHolder" format="reference" />
+        <attr name="errorImage" format="reference" />
+        <attr name="default_width" format="dimension" />
+        <attr name="default_height" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RatingBar">
+        <attr name="starImageSize" format="dimension"/>
+        <attr name="starImageWidth" format="dimension"/>
+        <attr name="starImageHeight" format="dimension"/>
+        <attr name="starImagePadding" format="dimension"/>
+        <attr name="starCount" format="integer"/>
+        <attr name="starNum" format="integer"/>
+        <attr name="starEmpty" format="reference"/>
+        <attr name="starFill" format="reference"/>
+        <attr name="starHalf" format="reference"/>
+        <attr name="clickable" format="boolean"/>
+        <attr name="halfstart" format="boolean"/>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="BubbleSeekBar">
+        <attr format="float|reference" name="bsb_min"/>
+        <attr format="float|reference" name="bsb_max"/>
+        <attr format="float|reference" name="bsb_progress"/>
+        <attr format="boolean" name="bsb_is_float_type"/>
+        <attr format="dimension|reference" name="bsb_track_size"/>
+        <attr format="dimension|reference" name="bsb_second_track_size"/>
+        <attr format="dimension|reference" name="bsb_thumb_radius"/>
+        <attr format="dimension|reference" name="bsb_thumb_radius_on_dragging"/>
+        <attr format="color|reference" name="bsb_track_color"/>
+        <attr format="color|reference" name="bsb_second_track_color"/>
+        <attr format="color|reference" name="bsb_thumb_color"/>
+        <attr format="integer|reference" name="bsb_section_count"/>
+        <attr format="boolean" name="bsb_show_section_mark"/>
+        <attr format="boolean" name="bsb_auto_adjust_section_mark"/>
+        <attr format="boolean" name="bsb_show_section_text"/>
+        <attr format="dimension|reference" name="bsb_section_text_size"/>
+        <attr format="color|reference" name="bsb_section_text_color"/>
+        <attr name="bsb_section_text_position">
+            <enum name="sides" value="0"/>
+            <enum name="bottom_sides" value="1"/>
+            <enum name="below_section_mark" value="2"/>
+        </attr>
+        <attr format="integer" name="bsb_section_text_interval"/>
+        <attr format="boolean" name="bsb_show_thumb_text"/>
+        <attr format="dimension|reference" name="bsb_thumb_text_size"/>
+        <attr format="color|reference" name="bsb_thumb_text_color"/>
+        <attr format="boolean" name="bsb_show_progress_in_float"/>
+        <attr format="boolean" name="bsb_touch_to_seek"/>
+        <attr format="boolean" name="bsb_seek_by_section"/>
+        <attr format="color|reference" name="bsb_bubble_color"/>
+        <attr format="dimension|reference" name="bsb_bubble_text_size"/>
+        <attr format="color|reference" name="bsb_bubble_text_color"/>
+        <attr format="integer" name="bsb_anim_duration"/>
+        <attr format="boolean" name="bsb_always_show_bubble"/>
+    </declare-styleable>
+
+    <declare-styleable name="LazyViewPager">
+        <attr name="init_lazy_item_offset" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="ColorTrackView">
+        <attr name="ctvText" format="string"/>
+        <attr name="ctvText_size" format="dimension"/>
+        <attr name="ctvText_origin_color" format="color"/>
+        <attr name="ctvText_change_color" format="color"/>
+        <attr name="ctvProgress" format="float"/>
+        <attr name="ctvDirection" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgress">
+        <!-- 进度条的背景色-->
+        <attr name="bgColor" format="color" />
+        <!-- 进度条的前景色 起始颜色-->
+        <attr name="foreStartColor" format="color" />
+        <!-- 进度条的前景色 结束颜色-->
+        <attr name="foreEndColor" format="color" />
+        <!-- 进度条的大小-->
+        <attr name="progressWidth" format="dimension" />
+        <!-- 最大进度-->
+        <attr name="maxProgress" format="integer" />
+        <!-- 现在的进度-->
+        <attr name="currProgress" format="integer" />
+        <!-- 进度条的起始位置-->
+        <attr name="progressInitialPosition" format="integer" />
+        <!-- 是否使用动画-->
+        <attr name="useAnimation" format="boolean" />
+        <!-- 使用渐变-->
+        <attr name="useGradient" format="boolean" />
+        <!-- 边角是否是圆的-->
+        <attr name="isCircleCorner" format="boolean" />
+        <!-- 是否是实心的-->
+        <attr name="isSolid" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TickCircleProgress">
+        <!-- 刻度条的粗细-->
+        <attr name="tickWidth" format="dimension" />
+        <!-- 刻度的颜色-->
+        <attr name="tickColor" format="color" />
+        <!-- 刻度条的高度-->
+        <attr name="tickMarkHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="TextCircleProgress">
+        <!-- 主标题颜色-->
+        <attr name="headColor" format="color" />
+        <!-- 副标题颜色-->
+        <attr name="subHeadColor" format="color" />
+        <!-- 主标题字体大小-->
+        <attr name="headSize" format="dimension" />
+        <!-- 副标题字体大小-->
+        <attr name="subHeadSize" format="dimension" />
+        <!-- 底部标题颜色-->
+        <attr name="bottomHeadColor" format="color" />
+        <!-- 底部标题大小-->
+        <attr name="bottomHeadSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="common_title">
+        <!-- 左边的图标是否显示-->
+        <attr name="leftPictrueIsShow" format="boolean" />
+        <!-- 左边的文本是否显示-->
+        <attr name="leftTextIsShow" format="boolean" />
+        <!-- 左边的图片id -->
+        <attr name="leftResPictrueId" format="reference" />
+        <!-- 左边文本-->
+        <attr name="leftText" format="string" />
+
+
+        <!-- 标题-->
+        <attr name="titleText" format="string" />
+
+        <!-- 右边图片是否显示-->
+        <attr name="rightPictrueIsShow" format="boolean" />
+        <!-- 右边文本是否显示-->
+        <attr name="rightTextIsShow" format="boolean" />
+        <!-- 右边资源图片-->
+        <attr name="rightResPictrueId" format="reference" />
+        <!-- 右边文本-->
+        <attr name="rightText" format="string" />
+
+    </declare-styleable>
+
+</resources>

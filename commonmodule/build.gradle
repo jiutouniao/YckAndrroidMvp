@@ -1,0 +1,111 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+  defaultConfig {
+      minSdkVersion rootProject.ext.minSdkVersion
+      targetSdkVersion rootProject.ext.targetSdkVersion
+    versionCode 1
+    versionName "1.0"
+    //1.设置混合DEX
+    multiDexEnabled true
+    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    //2.设置模块名称
+    javaCompileOptions {
+      annotationProcessorOptions {
+        arguments = [moduleName: project.getName()]
+      }
+    }
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+  //3.去掉包名中多余的部分
+  packagingOptions {
+    exclude 'META-INF/DEPENDENCIES.txt'
+    exclude 'META-INF/LICENSE.txt'
+    exclude 'META-INFTICE.txt'
+    exclude 'META-INFTICE'
+    exclude 'META-INF/LICENSE'
+    exclude 'META-INF/DEPENDENCIES'
+    exclude 'META-INFtice.txt'
+    exclude 'META-INFcense.txt'
+    exclude 'META-INF/dependencies.txt'
+    exclude 'META-INF/LGPL2.1'
+  }
+  // 4.添加 dataBinding
+  dataBinding {
+    enabled = true
+  }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile('com.taobao.android:atlas_core:5.0.6-rc3@aar') {
+        transitive = true
+    }
+    //路由
+    compile 'com.alibaba:arouter-api:1.2.0'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.1.1'
+    compile 'com.taobao.android:atlasupdate:1.1.4@aar'
+    //support包
+    //noinspection GradleCompatible
+    compile 'com.android.support:appcompat-v7:27.1.1'
+    //implementation 'com.android.support:support-compat:26.1.0'
+    compile 'com.android.support:recyclerview-v7:27.1.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:cardview-v7:27.1.1'
+    compile 'com.android.support:design:27.1.1'
+    compile 'com.android.support:multidex:1.0.1'
+    //本地依赖
+    compile project(':dbmodule')
+    //网络请求
+    compile 'com.google.code.gson:gson:2.8.1'
+    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    compile 'com.squareup.retrofit2:converter-jackson:2.2.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.2.0'
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'com.lzy.net:okgo:2.1.4'
+    //rx
+    compile 'io.reactivex:rxandroid:1.1.0'
+    //图片加载
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.7'
+    //util
+    compile 'org.litepal.android:core:1.5.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.yanzhenjie:permission:2.0.0-rc12'
+    // compile 'com.yanzhenjie:permission:2.0.0-rc12'
+    //自定义view
+    compile 'com.lcodecorex:tkrefreshlayout:1.0.7'
+    compile 'com.github.dmytrodanylyk.shadow-layout:library:1.0.3'
+    compile 'com.yanzhenjie:recyclerview-swipe:1.0.4'
+    compile 'com.commit451:PhotoView:1.2.4'
+    compile 'com.github.hackware1993:MagicIndicator:1.5.0'
+    compile 'com.shizhefei:MultiTypeView:1.0.1'
+    //状态栏
+    compile 'com.githang:status-bar-compat:0.3'
+    compile 'de.keyboardsurfer.android.widget:crouton:1.8.5@aar'
+    // compile project(':sharemodule') ':sharemodule',
+    //二维码
+    compile 'cn.carbs.android:ExpandableTextView:1.0.3'
+    //  compile 'me.dm7.barcodescanner:zxing:1.9.8'
+    //    compile 'me.dm7.barcodescanner:zbar:1.9.8'
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    compile 'com.nex3z:flow-layout:1.2.2'
+    compile 'com.zhy:magic-viewpager:1.0.1'
+    compile 'me.drakeet.multitype:multitype:3.4.4'
+    //图片选择
+    compile 'com.yanzhenjie:album:2.0.2'
+
+}

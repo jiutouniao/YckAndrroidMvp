@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="login_colorPrimary">#4990e2</color>
+    <color name="login_colorPrimaryDark">#4990e2</color>
+    <color name="login_colorAccent">#4990e2</color>
+
+    <color name="login_bg_color_white">#ffffff</color>
+    <color name="login_text_color_gray">#333333</color>
+    <color name="login_text_color_gray1">#999999</color>
+    <color name="login_text_color_grays">#b6dbf4</color>
+</resources>

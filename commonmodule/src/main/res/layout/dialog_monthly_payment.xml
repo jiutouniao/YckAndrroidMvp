@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_monthly_payment_dialog_bg"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_common_close"/>
+
+        <TextView
+            android:id="@+id/tv_more1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="包月阅读专区"
+            android:textColor="#3f3f3f"
+            android:textSize="16sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_more2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_more1"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="1dp"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingLeft="17dp"
+            android:text="包月阅读里不含单本购买、购买允许包月"
+            android:textColor="#3f3f3f"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_more2"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingLeft="17dp"
+            android:text="包月所需： 10000 ¥"
+            android:textColor="#3f3f3f"
+            android:textSize="14sp"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="307dp"
+
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/shape_monthly_payment_dialog_bg"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_buy"
+            android:layout_width="115dp"
+            android:layout_height="26dp"
+            android:textSize="14sp"
+            android:background="@drawable/shape_monthly_payment_text_bg"
+            android:gravity="center"
+            android:text="购买"
+            android:textColor="@color/trading_record_text_money_color"/>
+
+    </LinearLayout>
+
+</LinearLayout>

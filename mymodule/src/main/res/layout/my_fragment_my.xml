@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <com.ys.jsst.pmis.commommodule.ui.widget.MyScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/ll_my_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="62dp"
+                        android:layout_marginRight="58dp"
+                        android:src="@drawable/bg_my_top"/>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        >
+
+                        <com.ys.jsst.pmis.commommodule.ui.widget.AvatarImageView
+                            android:id="@+id/aiv_icon"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            app:aiv_BoarderWidth="2dp"
+                            app:aiv_ShowBoarder="true"
+                            android:src="@drawable/ic_head_boy"
+                            app:aiv_TextSizeRatio="0.7"/>
+
+                        <ImageView
+                            android:id="@+id/clv_my_icon"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_my_name"
+                        style="@style/text_single_default"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="30dp"
+                        android:text="邵兵"
+                        android:textColor="#313340"
+                        android:textSize="23sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_school_name"
+                        style="@style/text_single_default"
+                        android:layout_alignLeft="@+id/tv_my_name"
+                        android:layout_alignStart="@+id/tv_my_name"
+                        android:layout_below="@+id/tv_my_name"
+                        android:layout_marginTop="13dp"
+                        android:text="深圳市鹰硕技术学校"
+                        android:textColor="#888a97"
+                        android:textSize="12sp"/>
+                </RelativeLayout>
+
+                <!--<include layout="@layout/item_base_common_line" />-->
+                <RelativeLayout
+                    android:id="@+id/tv_my_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="18dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14dp"
+                        android:src="@drawable/icon_personal_information"/>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="57dp"
+                        android:text="个人信息"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        android:src="@drawable/my_arrows"/>
+                </RelativeLayout>
+
+                <include
+                    layout="@layout/item_base_common_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"/>
+
+                <include
+                    layout="@layout/item_base_common_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/tv_my_opinion"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14dp"
+                        android:src="@drawable/icon_feedback"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="57dp"
+                        android:text="意见反馈"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        android:src="@drawable/my_arrows"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/tv_my"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14dp"
+                        android:src="@drawable/icon_setting"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="57dp"
+                        android:text="设置"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        android:src="@drawable/my_arrows"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </com.ys.jsst.pmis.commommodule.ui.widget.MyScrollView>
+    </LinearLayout>
+
+</layout>
